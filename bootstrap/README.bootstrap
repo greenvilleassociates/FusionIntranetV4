@@ -1,1 +1,2 @@
-This program determines the size of your screen and adjusts automagically.
+This program determines the size of your screen and adjusts automagically. It needs to replace Index.html, Index.htm or Index.php depending on how your
+Web Server directory is configured.
