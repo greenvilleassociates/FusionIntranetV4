@@ -1,0 +1,21 @@
+<HTML>
+<header>
+<style>
+body {
+    background-color: linen;
+}
+
+h1 {
+    color: navy;
+    margin-left: 20px;
+}
+</style>
+</header>
+ <body>
+ <frameset cols="2%,960px,2%" FRAMEBORDER=NO FRAMESPACING=0 BORDER=0>
+  <frame src="a.html" frameborder="0" noresize="noresize" marginheight '0' marginwidth '0' >
+  <frame src="framebase.html" frameborder="0" noresize="noresize" marginheight '0' marginwidth '0' >
+  <frame src="c.html" frameborder="0" noresize="noresize" marginheight '0' marginwidth '0' >
+ </frameset> 
+ </body>
+</HTML>

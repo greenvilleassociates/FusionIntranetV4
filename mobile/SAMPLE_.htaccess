@@ -1,0 +1,24 @@
+/*
+Greenville Associates Consulting
+Fusion Shell Mobility Add On For V1, and V2 Products
+SAMPLE HTACCESS FILE
+*/
+
+// THE FOLLOWING FILE SHOULD BE PUT IN THE ROOT OF YOUR APACHE WEB ROOT DIRECTORY FOR YOUR VIRTUAL HOST
+// THIS FILE MATCHES YOUR CLIENT TYPE AND REDIRECTS MOBILE BROWSERS REACHING YOUR WEBSITE TO THE TARGET FUSIONMOBILE DIRECTORY
+// DEFAULT INSTALLATION TARGET IS <WEBROOT>/fusionshell/mobile
+
+<IfModule mod_rewrite.c>
+RewriteEngine On
+RewriteCond %{HTTP_USER_AGENT} "!(android|blackberry|googlebot-mobile|iemobile|ipad|iphone|ipod|opera mobile|palmos|webos)" [NC]
+RewriteRule ^$ https://www.greenvilleassociates.com/fusionshell/mobile [L,R=302]
+</IfModule>
+
+//FOR FUSIONPRO CUSTOMERS - YOUR DEFAULT DIRECTORY IS DIFFERENT
+/*
+<IfModule mod_rewrite.c>
+RewriteEngine On
+RewriteCond %{HTTP_USER_AGENT} "!(android|blackberry|googlebot-mobile|iemobile|ipad|iphone|ipod|opera mobile|palmos|webos)" [NC]
+RewriteRule ^$ https://www.donaldtrump.com/fusionpro/mobile [L,R=302]
+</IfModule>
+*/

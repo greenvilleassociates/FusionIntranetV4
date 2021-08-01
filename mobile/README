@@ -1,0 +1,19 @@
+G/A Consulting
+G/A Mobile Browser for FusionShell V1(HTML JAVA ONLY) OR V2(With Opensource Platforms)
+November 2020 - Update
+John Stritzinger - Sr. Partner - G/a Consulting.
+
+/*--------
+FusionV1 - Does not make any Assumptions about BackEnd Databases, or Content Managers. Can Support Any Code Base on any Toolsets and is more flexible than V2 which supports Wordpress 
+Drupal And Joomla Hybrid Installations. In Other Words V2 is our recommended approach, but may not be right for everyone. For Custom Clients we start with V1 and use Installatron 
+to enhance their environment to any Opensource. If your company has no webrsources you want V2 which is support of WebAutopilot for those with good marketing teams but sparse IT 
+resources.
+*/////////////
+
+This ADD-ON IS NOT INCLUDED WITH THE BASE V1 PACAKGE.
+Requires .HTACCESS off Root to redirect to Mobile Directory
+Requires JQUERY Menu System and Support Files
+Recommended Existing Content System on Core Web Site
+Focuses on Presenting Subset for Full Portal to Customers which can be customized.
+Option versus using this tool for FusionShell Customers is to simply load Wordpress as the front page - This Makes Wordpress Summary Data fully avaialable on Greenville Mobile.
+*/

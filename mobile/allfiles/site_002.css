@@ -1,0 +1,246 @@
+/*Make sure your selectors are very specific, you can accidentally overide builder css if you are not careful*/
+/*Do not edit positioning, width, height in CSS, set that in the markup*/
+/*CSS Changes, are somewhat permanent, user cannot change these, they can overide them via element inline style, but thats about it*/
+
+/* site */
+
+.viaha.default.page-bg {
+	background: url('assets/viaha-bg.png') ;
+}
+.viaha.default{
+	font-family: 'Anaheim', sans-serif;
+	font-size: 14px;
+	color: #393939;
+}
+.viaha.default h1,
+.viaha.default h2,
+.viaha.default h3,
+.viaha.default h4,
+.viaha.default h5,
+.viaha.default h6{
+	margin: 0;
+	font-family: 'Roboto Slab', serif;
+	font-weight: normal;
+	color: #2a2a2a;
+	line-height: 1.2;
+}
+.viaha.default h1 {
+ 	color: #666666;
+    font-size: 36px;
+}
+.viaha.default h2{
+	font-size: 30px;
+}
+.viaha.default h3{
+	font-size: 24px;
+}
+.viaha.default h4{
+	font-size: 18px;
+}
+.viaha.default h5{
+	font-size: 16px;
+}
+.viaha.default h6{
+	font-size: 14px;
+}
+.viaha.default .text-plugin ul{
+	padding: 0 0 0 1.2em;
+	margin: 0;
+}
+.viaha.default .cat{
+	font-family: 'Racing Sans One', cursive;
+	font-size:48px;
+	color: #15c7e7;
+	padding-left: 4px;
+}
+
+.viaha.default .main-home{
+	font-size: 36px;
+	font-weight: normal;
+	text-shadow: 0 0 7px rgba(0,0,0,0.5);
+	margin: 0;
+}
+.viaha.default .main-featured{
+	font-size: 18px;
+	line-height: 1;
+}
+.viaha.default .divider{
+	background: #393939;
+	width:960px;
+	height:5px;
+}
+.viaha.default .white{
+	color: #ffffff;
+}
+.viaha.default .section-bg{
+	background: #fff;
+}
+/****************/
+/* neo main nav */
+/****************/
+.viaha.default .navigation-2-plugin .neo-asset-inner ul {
+	font-family: 'Ubuntu', sans-serif;
+}
+.viaha.default .navigation-2-plugin .neo-asset-inner > ul > li {
+	padding: 8px 40px 8px 40px;
+	background-color: #ececec;
+	font-size: 14px;
+	border-radius: 5px 5px 0px 0px;
+	border: 1px solid transparent;
+	margin-right:5px;
+}
+.viaha.default .navigation-2-plugin .neo-asset-inner > ul > li > a {
+	color: #2a2a2a;
+}
+.viaha.default .navigation-2-plugin .neo-asset-inner > ul > li.k-state-hover {
+	background-color: #393939;
+	font-size: 14px;
+	border-radius: 5px 5px 0px 0px;
+	border-color: transparent;
+}
+.viaha.default .navigation-2-plugin .neo-asset-inner > ul > li.k-state-hover > a {
+	color: #FFF;
+}
+.viaha.default .navigation-2-plugin .neo-asset-inner > ul > li.k-state-active {
+	background-color: #393939;
+	font-size: 14px;
+	border-radius: 5px 5px 0px 0px;
+	border: 1px solid transparent;
+}
+.viaha.default .navigation-2-plugin .neo-asset-inner > ul > li.k-state-active > a {
+	color: #FFF;
+}
+/***************/
+/* neo sub nav */
+/***************/
+.viaha.default .navigation-2-plugin.sub-nav-fixed-plugin ul ul > li {
+width: 130px;
+}
+.viaha.default .navigation-2-plugin ul ul > li {
+	padding: 10px;
+	margin-top: 3px;
+	background-color: #ececec;
+	font-size: 14px;
+	border-radius: 5px;
+	border: 1px solid #ececec;
+}
+.viaha.default .navigation-2-plugin ul ul > li > a {
+	color: #2a2a2a;
+}
+.viaha.default .navigation-2-plugin ul ul > li.k-state-hover {
+	padding: 10px;
+	margin-top: 3px;
+	background-color: #393939;
+	font-size: 14px;
+	border-radius: 5px;
+	border: 1px solid #393939;
+}
+.viaha.default .navigation-2-plugin ul ul > li.k-state-hover > a {
+	color: #FFF;
+}
+.viaha.default .navigation-2-plugin ul ul > li.k-state-active {
+	padding: 10px;
+	margin-top: 3px;
+	background-color: #393939;
+	font-size: 14px;
+	border-radius: 5px;
+	border: 1px solid #393939;
+}
+.viaha.default .navigation-2-plugin ul ul > li.k-state-active > a {
+	color: #FFF;
+} 
+/****************/
+/* END NEO NAV2 */
+/****************/
+/* CONTACT */
+/*header*/
+.viaha.default #FormHeading-id{
+	display: none;
+}
+
+/* make content adaptive */
+.viaha.default div[id^='webcom-component-form'] > table > tbody > tr > td:first-child,
+.viaha.default div[id^='webcom-component-form'] > table > tbody > tr > td:last-child,
+.viaha.default div[id='preview_id_only'] > table > tbody > tr > td:first-child,
+.viaha.default div[id='preview_id_only'] > table > tbody > tr > td:last-child{
+	display: none;
+}
+.viaha.default div[id^='webcom-component-form'] > table > tbody > tr > td,
+.viaha.default div[id='preview_id_only'] > table > tbody > tr > td,
+.viaha.default .web_com_custom_form .form-element-size-large[type="text"], 
+.viaha.default .web_com_custom_form table.form-element-size-large, 
+.viaha.default .web_com_custom_form textarea.form-element-size-large, 
+.viaha.default .web_com_custom_form select.form-element-size-large,
+.viaha.default .web_com_custom_form table.personName-large{
+}
+/* end content adaptive */
+
+/* labels style */
+.viaha.default .web_com_custom_form label{
+	font-weight: normal;
+	font-size: 14px;
+	margin-bottom: 0;
+	color: #2a2a2a;
+}
+
+/* spacing between rows */
+.viaha.default .web_com_custom_form .form-element-wrapper{
+	padding: 0;
+	margin-bottom: 5px;
+}
+
+/* email & phone */
+/* display email & phone in the same row */
+
+.viaha.default .web_com_custom_form #email-id,
+.viaha.default .web_com_custom_form #phone-id{
+	display: inline-block !important;
+	box-sizing: border-box;
+	-moz-box-sizing: border-box;
+}
+.viaha.default .web_com_custom_form #email-id{
+	padding-right: 5px;
+}
+.viaha.default .web_com_custom_form #phone-id{
+	padding-left: 5px;
+}
+
+/* end display in one row */
+/* full width */
+.viaha.default .web_com_custom_form #email-id input,
+.viaha.default .web_com_custom_form #phone-id input{
+}
+
+.viaha.default .web_com_custom_form textarea{
+	height: 90px;
+	resize: none;
+}
+
+/*CUSTOM*/
+/* first & last name */
+.viaha.default .web_com_custom_form .FirstName label,
+.viaha.default .web_com_custom_form .LastName label{
+	font-size: 12px !important;
+}
+
+.viaha.default .web_com_custom_form input[type='text'],
+.viaha.default .web_com_custom_form textarea{
+	border: none;
+	background:  #f7f5f5;
+	border:1px solid rgba(0,0,0,0.4); 
+}
+
+.viaha.default .web_com_custom_form input[type='submit']{
+	color: #2a2a2a;
+	border: 1px solid #dadada;
+	border-top: none;
+	border-left: none;
+	border-radius: 3px;
+	background: -webkit-linear-gradient(#f4f4f4, #ececec); 
+	background: -moz-linear-gradient(#f4f4f4, #ececec);
+	background: linear-gradient(#f4f4f4, #ececec);
+	font-size: 14px;
+	font-family: 'Muli', sans-serif;
+	text-shadow: 1px 1px 1px #fff;
+	padding: 4px 12px;
+}

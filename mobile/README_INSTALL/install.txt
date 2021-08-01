@@ -1,0 +1,21 @@
+The Mobile Browser can work with an existing website, however it is designed to work with FusionShell, and FusionPro V1/V2 primarily. For Both V1 & V2 the wordpress and joomla directories
+Are /web/webroot.com/w and /web/webroot.com/h respectively.
+
+We have included a sample .htaccess which works with both nginx, and apache webservers if copied to the root website location. To test simply use a mobile browser to access your
+website and you should be redirected to the V2MobileShell.
+
+1) Run the github script for Version1 or Version2.
+2) Install Joomla either manually or via Installatron/Softalicious Installer as instructed from a cPanel account.
+3) Install Wordpress either manually or via Installatron/Softalicious Installer as instructed from a cPanel account.
+4) Install Drupal either manually or via Installatron/Softalicious Installer as instructed from a cPanel account.
+MYSQL COMMANDS
+1) create user 'fusionshell@localhost' identified by 'test1';
+2) create database fusionshell;
+3) grant all on fusionshell.* to 'fusionshell@localhost';
+
+4) Use the wordpress installer noting that joomlatables will be given a different string wp_tablename.
+5) Use the joomla installer noting that joomlatables will be given a different string joom_tableablename.
+6) Use the drupal installer noting that drupaltables will be given a different string drupal_tablename.
+
+POSTGRES
+1) Postgres will work easily with Joomla, but Wordpress requires a special version with a dbfile in the Content directory.
