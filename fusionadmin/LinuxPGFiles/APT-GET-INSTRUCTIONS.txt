@@ -1,0 +1,61 @@
+Dear Users... On Linux Machines(Debian or Ubuntu) the following are the configuration commands you need to type
+from any public cloud platform (Google, Amazon, Azure, CTSCloud).
+
+###To install Postgress DBMS & Support for PHP
+
+STEP 1: Make Sure the Repository is present(This is roughly the installation package for the Opensource DBMS).
+
+sudo apt-get install wget ca-certificates
+
+wget --quiet -O - https://www.postgresql.org/media/keys/ACCC4CF8.asc | sudo apt-key add -
+
+##import postgresql apt repository
+
+Then, add the PostgreSQL repository by typing:
+
+sudo sh -c 'echo "deb http://apt.postgresql.org/pub/repos/apt/ 'lsb_release -cs'-pgdg main" >> /etc/apt/sources.list.d/pgdg.list'
+
+Step 2: Update the Package List
+
+After adding the official PostgreSQL repository, make sure to update the package list. Doing this ensures you install the latest PostgreSQL package.
+
+sudo apt-get update
+
+Step 3: Install PostgreSQL
+
+To install PostgreSQL and the PostgreSQL contrib package (which provides additional features), use the following command:
+
+sudo apt-get install postgresql postgresql-contrib
+
+Step 4: Make Sure PHP is configured to work with Apache and NGINX
+
+sudo apt-get install php php-pgsql libapache2-mod-php(APACHE WEB SERVER) OR sudo apt-get install php php-fpm(NGINX WEB SERVER)
+
+
+PGADMIN - Is the Postgres Web Administration Tool for the Database. It is roughly equivlaent to Oracle SQL Plus, MySql Workbench, and MS SQL Administrator
+
+#
+# Setup the repository
+#
+
+# Install the public key for the repository (if not done previously):
+sudo curl https://www.pgadmin.org/static/packages_pgadmin_org.pub | sudo apt-key add
+
+# Create the repository configuration file:
+sudo sh -c 'echo "deb https://ftp.postgresql.org/pub/pgadmin/pgadmin4/apt/$(lsb_release -cs) pgadmin4 main" > /etc/apt/sources.list.d/pgadmin4.list && apt update'
+
+#
+# Install pgAdmin
+#
+
+# Install for both desktop and web modes:
+sudo apt install pgadmin4
+
+# Install for desktop mode only:
+sudo apt install pgadmin4-desktop
+
+# Install for web mode only: 
+sudo apt install pgadmin4-web 
+
+# Configure the webserver, if you installed pgadmin4-web:
+sudo /usr/pgadmin4/bin/setup-web.sh
