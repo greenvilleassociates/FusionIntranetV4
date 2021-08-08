@@ -1,0 +1,7 @@
+Postgres installers for your Operating System Can be found at the URL below.
+
+https://www.enterprisedb.com/downloads/postgres-postgresql-downloads
+
+After the Core DBMB is installed we also recommend you install PGADMIN4 at the link below.
+
+https://www.pgadmin.org/
