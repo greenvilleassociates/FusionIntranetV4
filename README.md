@@ -1,5 +1,5 @@
 # gsuba-fusion
-Greenville Associates Fusion Shell
+Greenville Associates Fusion Shell For Intranet Developers
 
 This shell provides a Open Platform Targeted Windowing System(On Windows/Linux/Unix) to provide javascript, HML5, PHP, Custom Microsoft(.ASPX), and Adobe Cold Fusion binaries to work in an integrated web framework. The Shell also hides the complexity of the software solution from the search bar, making it much friendlier to computer security architects. The shell works with IIS, Apache, and NGINX web servers without modification and links to any database platform supported by your web server. The First release
 is targeted for Mysql or Postgres Users using PHP or cPanel(Installatron or Softalicuous Users) but can be used as a standalone web page environment without them.
