@@ -1,0 +1,12 @@
+@font-face {
+	font-family: Roboto Slab;
+	src: local("Roboto Slab Regular"), local("RobotoSlab-Regular"), url(http://fonts.gstatic.com/s/robotoslab/v6/y7lebkjgREBJK96VQi37ZobN6UDyHWBl620a-IRfuBk.woff) format("woff");
+	font-weight: 400;
+	font-style: normal;
+}
+@font-face {
+	font-family: Roboto Slab;
+	src: local("Roboto Slab Bold"), local("RobotoSlab-Bold"), url(http://fonts.gstatic.com/s/robotoslab/v6/dazS1PrQQuCxC3iOAJFEJTqR_3kx9_hJXbbyU8S6IN0.woff) format("woff");
+	font-weight: 700;
+	font-style: normal;
+}
