@@ -1,0 +1,144 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>jQuery UI Accordion - Default functionality</title>
+  <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+  <link rel="stylesheet" href="/resources/demos/style.css">
+  <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+  <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+  <script>
+  $( function() {
+    $( "#accordion" ).accordion();
+  } );
+  </script>
+</head>
+  <style>
+.jsstyle {
+  font-size: 6pt;
+  };
+    
+ol {
+    padding: 5px;
+}
+
+ul {
+    padding: 5px;
+    font-size: 6pt;
+}
+
+ol li {
+    padding: 5px;
+    margin-left: 15px;
+    font-size: 6pt;
+}
+
+ul li {
+    margin: 5px;
+    font-size: 6pt;
+}
+ 
+      /* Always set the map height explicitly to define the size of the div
+       * element that contains the map. */
+      #map {
+        height: 150px;
+      }
+      /* Optional: Makes the sample page fill the window. */
+      html, body {
+        height: 150px;
+        margin: 0;
+        padding: 0;
+      }
+    </style>
+  
+    </head> 
+ <body>
+
+
+   
+   <div align=center>
+   <p align=center>
+   <a href="http://www.glocation.info/directions.html" target="body3"> Directions</a>  
+   <a href="http://www.glocation.info/searchmap.html" target="body3"> Nav Geo</a>
+   <a href="http://www.glocation.info/aboutframe.html" target="body2"> Reload</a></p>
+   <p align=center><img src="./images/viaha-home.jpg" width=91% height=200 name="mapiframe"></p>
+   </div>
+      
+  <div id="accordion" class="jsstyle">
+  <h3>Friends</h3>
+  <div>
+    <p>
+    Current Friends and Contacts
+    </p>
+    <ul>
+      <li>Current Friends</li>
+      <li>Current Groups</li>
+      <li>Add Friend</li>
+      <li>Add Group</li>
+      <li>Google Contacts</li>
+      <li>Yahoo Contacts</li>
+      <li>Facebook Contacts</li>
+    </ul>
+  </div>
+  <h3>Account Information</h3>
+  <div>
+    <p>
+      <li><a href="http://gaweb1.greenvilleassociates.com/shop/account.php?login" target="body3">Current Account</a></li>
+      <li><a href="http://gaweb1.greenvilleassociates.com/shop/account.php?login" target="body3">Statements</a></li>
+      <li><a href="http://gaweb1.greenvilleassociates.com/shop/account.php?login" target="body3">Payments</a></li>
+    </p>
+  </div>
+  <h3>Devices</h3>
+  <div>
+    <p>
+    Select your device type:
+     <ul>
+      <li>Apple</li>
+      <li>Android</li>
+      <li>Windows</li>
+    </ul>
+    </p>
+  </div>
+  
+  <h3>Messaging</h3>
+  <div>
+    <p>
+    Select your messaging Platform
+    </p>
+    <ul>
+      <li><a href="http://www.glocation.info:9090" target="body3">Glocation.Info</a></li>
+      <li><a href="https://login.yahoo.com/?.done=https%3A%2F%2Fmessenger.yahoo.com%2F&.pd=c%3DU4ZyUvq72e4_yB0G1IX7c9q7dSw-&.src=messenger" target="body3"> Yahoo Messenger</a></li>
+      <li><a href="https://hangouts.google.com/" target="body3">Google Hangouts</a></li>
+      <li><a href="https://my.screenname.aol.com/_cqr/login/login.psp?sitedomain=www.aim.com&siteState=OrigUrl%3Dhttp%3A%2F%2Fwww.aim.com%2F.home&offerId=aim-travolta-en-us" target="body3"> AIM</a></li>
+      <li>Add Other</li>
+    </ul>
+    </div>
+ 
+       <div id="map">
+        </div>
+    <script>
+      var labels = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ';
+      var labelIndex = 2;
+      var map;
+      function initMap() {
+        var corporate = {lat: 40.0049314, lng: -75.258116};
+         var map = new google.maps.Map(document.getElementById('map'), {
+          zoom: 9,
+          center: corporate
+        });
+         var marker = new google.maps.Marker({
+          position: corporate,
+           label: corporate,
+           label: labels[labelIndex++ % labels.length],
+          map: map
+        });
+
+      }
+    </script>
+   
+   <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB9Q1gXsDab7VnM6qfmAOhqfmMR84UCYao&callback=initMap"
+    async defer></script>
+
+</body>
+</html>
