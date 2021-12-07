@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html>
+<head><meta http-equiv="Content-Type" content="text/html; charset=us-ascii">
+	
+	<title></title>
+<style type="text/css">ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+}
+pictureframe {
+    color: transparent;
+    text-align: left;
+    text-decoration: none;
+    margin-top: 0em;
+    margin-left: 0em;
+    margin: 0;
+    padding: 0;
+}
+
+li {
+    float: left;
+}
+
+li a, .dropbtn {
+    display: inline-block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    margin-top: 0em;
+    margin-left: 0em;
+}
+
+li a:hover, .dropdown:hover .dropbtn {
+    background-color:  	transparent;
+}
+
+li.
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+a {
+    font-size: 6pt;
+    color: white;
+    background-color: black;
+    margin-left: 1px;
+}
+
+
+a:visited {
+    color: #000000;
+} 
+
+dropdown {
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: transparent;
+    min-width: 160px;
+    box-shadow: 4px 8px 16px 4px rgba(0,0,0,0.2);
+}
+
+.dropdown-content a:hover {background-color: #FAFEFB}
+
+.show {display:block;}
+	</style>
+
+</head>
+<body bgcolor=black>
+
+<layer align="center" id="placeholderlayer2" style="pictureframe"></layer>
+			<div align="center" id="placeholderdiv" valign="middle"></div>
+</body>
+<script language="JavaScript1.2">
+
+var howOften = 10; //number often in seconds to rotate
+var current = 0; //start the counter at 0
+var ns6 = document.getElementById&&!document.all; //detect netscape 6
+
+// place your images, text, etc in the array elements here
+var items = new Array();
+    
+
+    items[00]="<a href='body.html'><img alt='1D' src='./images/Annapolis1D.jpg' height='485' width='800' border='5' /></a>"; //a linked image
+    items[01]="<a href='body.html'><img alt='VirginiaC' src='./images/VirginiaC.jpg' height='485' width='800' border='5' /></a>"; //a linked image
+    items[02]="<a href='body.html'><img alt='Greenville' src='./allfiles/gvsc.jpg' height='485' width='800' border='5' align='center'/></a>"; 
+    items[03]="<a href='body.html' ><img alt='Columbia' src='./images/Capitol1.jpg' height='485' width='800' border='5' align='center'/></a>"; //a linked image	
+    items[04]="<a href='body.html'><img alt='PennsylvaniaCap' src='./images/HB.jpg' height='485' width='800' border='5' align='center'/></a>"; //a linked image
+    items[05]="<a href='body.html'><img alt='1A' src='./images/Annapolis1A.jpg' height='485' width='800' border='5' align='center'/></a>"; //a linked image
+    items[06]="<a href='body.html'><img alt='585' src='./images/IMG585B.JPG' height='485' width='800' border='5' /></a>"; //a linked image
+    items[07]="<a href='body.html' ><img alt='Whitehouse' src=' ./images/Whitehouse.jpg' height='485' width='800' border='5' /></a>"; //a linked image
+    items[08]="<a href='body.html'><img alt='NC' src='./images/NC.jpg' height='485' width='800' border='5' /></a>"; //a linked image
+    items[09]="<a href='body.html'><img alt='1H' src='./images/Annapolis1H.jpg' height='485' width='800' border='5' /></a>"; //a linked image
+    items[10]="<a href='body.html'><img alt='1C' src='./images/Annapolis1C.jpg' height='485' width='800' border='5' /></a>"; //a linked image
+    items[11]="<a href='body.html'><img alt='1E' src='./images/Annapolis1E.jpg' height='485' width='800' border='5' /></a>"; //a linked image
+    items[12]="<a href='body.html'><img alt='1F' src='./images/Annapolis1F.jpg' height='485' width='800' border='5' /></a>"; //a linked i mage
+    items[13]="<a href='body.html'><img alt='1G' src='./images/Annapolis1G.jpg' height='485' width='800' border='5' /></a>"; //a linked image
+        
+function rotater() {
+    document.getElementById("placeholder").innerHTML = items[current];
+    current = (current==items.length-1) ? 0 : current + 1;
+    setTimeout("rotater()",howOften*1000);
+}
+
+function rotater() {
+    if(document.layers) {
+        document.placeholderlayer.document.write(items[current]);
+        document.placeholderlayer.document.close();
+    }
+    if(ns6)document.getElementById("placeholderdiv").innerHTML=items[current]
+        if(document.all)
+            placeholderdiv.innerHTML=items[current];
+
+    current = (current==items.length-1) ? 0 : current + 1; //increment or reset
+    setTimeout("rotater()",howOften*1000);
+}
+window.onload=rotater;
+//-->
+</script>
+FOR SALES INFORMATION <mailto:sales@greenvilleassociates.com> PLEASE SEND US A MESSAGE!
+
+</html>
