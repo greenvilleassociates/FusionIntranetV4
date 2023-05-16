@@ -50,13 +50,29 @@ function wait(ms){
 
 
 	
-    if (viewportwidth > 1600)
+    if (viewportwidth > 2300)
 	{
 	//document.write('<p>Width is MEGA.... Choose Apple  '+viewportwidth+'x'+viewportheight+'</p>' );
 	//wait(7000);
 	//break;
 	////return;
 	window.location.href = "./framebase.html";
+	}
+	else if (viewportwidth > 2000)
+	{
+	//document.write('<p>Width is Big.... Choose Apple  '+viewportwidth+'x'+viewportheight+'</p>' );
+	//wait(7000);
+	window.location.href = "./2000index.html";
+	//return 0;
+	//break;
+	}
+	else if (viewportwidth > 1600)
+	{
+	//document.write('<p>Width is Big.... Choose Apple  '+viewportwidth+'x'+viewportheight+'</p>' );
+	//wait(7000);
+	window.location.href = "./1600index.html";
+	//return 0;
+	//break;
 	}
 	else if (viewportwidth > 1400)
 	{
