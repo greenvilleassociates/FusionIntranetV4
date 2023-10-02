@@ -1,0 +1,23 @@
+<html>
+    <body onload="plllocking()">
+        <h3>Bootstrapcircusframe.html</h3>
+        
+    </body>
+    </html>
+    <script>
+        function plllocking()
+        {
+        var juid;
+        juid = localStorage.getItem("jid");
+        if (juid = '901')
+        {
+            alert("you are logged in as guest. this is a subscriber only service. Routing to Demonstration Mode.")
+            window.open('https://gl1.glocation.info/sso/glcode/gtvframe.html', '_self');
+        }
+        else 
+        {
+            alert("you are already logged in redirecting");
+            window.open('https://gl1.glocation.info/sso/glcode/gtvframe.html', '_self');
+        }
+        }
+    </script>
