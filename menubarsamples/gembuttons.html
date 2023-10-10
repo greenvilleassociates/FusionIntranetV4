@@ -1,0 +1,145 @@
+<html>
+<head>
+<style>
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333333;
+  align: center;
+  display: inline;
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 16px;
+  text-decoration: none;
+}
+
+li a:hover {
+  background-color: #111111;
+}
+
+#buttons{
+    float:right;
+    position:relative;
+    left:-50%;
+    text-align:left;
+}
+#buttons ul{
+    list-style:none;
+    position:relative;
+    left:50%;
+}
+
+#buttons li{float:left;position:relative;}/* ie needs position:relative here*/
+
+#buttons a{
+    text-decoration:none;
+    margin:10px;
+    background:red;
+    float:left;
+    border:2px outset blue;
+    color:#fff;
+    padding:2px 5px;
+    text-align:center;
+    white-space:nowrap;
+}
+#buttons a:hover{ border:2px inset blue;color:red;background:#f2f2f2;}
+#content{overflow:hidden}/* hide horizontal scrollbar*/
+
+ul#horizontal-list {
+	min-width: 696px;
+	list-style: none;
+	padding-top: 20px;
+	}
+	ul#horizontal-list li {
+		display: inline;
+	}
+
+#menu-outer {
+	height: 84px;
+	background: url(images/bar-bg.jpg) repeat-x;
+}
+
+.table {
+	display: table;   /* Allow the centering to work */
+	margin: 0 auto;
+}
+
+</style>
+</head>
+<body bgcolor=#BF5700>
+<div id="menu-outer">
+  <div class="table">    
+<ul id="horizontal-list">
+<li><button onclick="dosomething1()">GridManager</button></li>
+<li><button onclick="dosomething2()">ProxOneEndPointManager</button></li>
+<li><button onclick="dosomething3()">SQLManager</button></li>
+<li><button onclick="dosomething4()">Accounting Manager</button></li>
+<li><button onclick="dosomething5()">Power Manager</button></li>
+<li><button onclick="dosomething6()">IT Inventory</button></li>
+<li><button onclick="dosomething7()">SSO Manager</button></li>
+<li><button onclick="dosomething8()">Security Manager</button></li>
+<li><button onclick="dosomething9()">EIS System</button></li>
+<li><button onclick="dosomething10()">GemHomepage</button></li>
+<li><button onclick="dosomething11()">CenterCourt</button></li>
+</ul>
+ </div>
+</div>
+<HR>
+</body>
+</html>
+<script>
+  function dosomething1()
+  {
+    window.open('https://grid.glocation.info', 'gembody2');
+  }
+  function dosomething2()
+  {
+    window.open('https://proxone.glocation.info', 'gembody2');
+  }
+  function dosomething3()
+  {
+    window.open('https://gvam1010.siteground.biz/phpmyadmin/index.php?route=/&route=%2F&lang=en', 'gembody2');
+  }
+  function dosomething4()
+  {
+    window.open('https://aem.glocation.info/index.html', 'gembody2');
+  }
+  function dosomething5()
+  {
+    window.open('https://pem.glocation.info', 'gembody2');
+  }
+  function dosomething6()
+  {
+    window.open('https://core.glocation.info', 'gembody2');
+  }
+  function dosomething7()
+  {
+    window.open('https://gl1.glocation.info/sso/index.php', 'gembody2');
+  }
+  function dosomething8()
+  {
+    window.open('https://sem.glocation.info', 'gembody2');
+  }
+  function dosomething9()
+  {
+    window.open('https://eis.glocation.info', 'gembody2');
+  }
+  function dosomething10()
+  {
+    window.open('homepage.html', 'gembody2');
+  }
+  function dosomething11()
+  {
+    window.open('centercourt.html', 'gembody2');
+  }
+</script>
