@@ -1,0 +1,28 @@
+<html>
+<body>
+<div align=center><p><span><img src="../images/acmelogo.gif"></span></div>
+<div align=center><p><H2>IIS Webserver Instructions</H2></p></div>
+<div>
+On IIS Webserver... each website has a configuration.<BR>
+On the Default Document Tab click it.<BR>
+On the right panel it will show a list of files which are automagically indexed.<BR>
+default.htm default.html index.html index.htm are listed (index.php will not be unless php is installed and registered and PHP Manager 2.0 for IIS module is installed.)<BR>
+If index.php is listed... use the right arrow to move it to the top of the list. This needs to be on top of index.html.<BR>
+<BR><BR>
+IF index.php is not listed in the right pane... you can add it or register your PHP Version with IIS PHP Manager.<BR>
+<BR>
+1) Install the Module PHP Manager for IIS Version 2.0X or higher(latest) this is an MIT built app which Microsoft Distributes on Microsoft.com.<a href="https://www.iis.net/downloads/community/2018/08/php-manager-20-beta-1-for-iis">Here</a><BR>
+2) Download Microsoft PHP 5.2 which includes PHP7.4 and NOT THE NEWEST ONE which will install PHP8.4.... or DO BOTH 5.2 and the latest.....<BR>
+3) Go into your specific website and make sure PHP7.4 or 8.06 are installer or JOOMLA will not run.<BR>
+4) Joomla Administrator will ask you to upgrade to 4.0 DO NOT DO IT EVER... or it will break FusionShell PLL.... Unless you dont need to secure individual pages.<BR>
+On some enterprise website, Domain Security is sufficient and can be configured on .aspx permissions in ASP.NET, but FusionShell does not need this to lock pages.
+</div>
+<BR>
+On your servers... we quite literally have every version of PHP ever released in the Program Files/PHP/Version Directory/ You dont need to delete all versions<BR>
+as most apps are version specific. PHP code improvements are usually not backwards compatabile above 2 versions up. In other words 7.4 and 8.0X work together but 8.1<BR>
+will not work with most apps.<BR><BR>
+
+<div><span><a href="../index.html">Return to the SSO/Search Home Instructions Site</a><span></div>
+
+</body>
+</html>

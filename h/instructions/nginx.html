@@ -1,0 +1,19 @@
+<html>
+<body>
+NGINX INSTRUCTIONS<BR>
+
+Go to /etc/nginx/sites-enabled/yourvhost.conf.....
+
+Under Default you will see a statement like:
+
+This is the Default and it will not work.... 
+
+index index.html index.htm and index.php......
+
+Move the index.php to the first position, this is the position the webserver looks at in order of priority. If index.html is listed first you will get the installer screen.
+
+Like this.....
+
+index index.php index.html
+</body>
+</html>
