@@ -1,5 +1,6 @@
 # gsuba-fusion
-NOTES -> Feb 2/8/2025 -> Current FI Version is 4.51 Its Located in the Root Drive and As a Package. FusionV4 is EOL as of 12/31/2025. V5 is a Major Rewrite with a different Directory Structure.
+NOTES -> Feb 2/8/2025 -> Current FusionShell Itranet Version is 4.51 Its Located in the Root Drive and As a Package. FusionShellV4 is EOL as of 12/31/2026. Long Term Support for Free Version Ends 12/31/2026.
+                         Current FProForIntranet -> V5 is a Major Rewrite with a different Directory Structure and its a Paid LIcensed Service.
 
 Greenville Associates Fusion Shell For Intranet Developers
 
